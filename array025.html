@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+
+        <script>
+            var notasDeTPs = [4, 7, 8, 5, 10];
+            var notaFinal = 0;
+            var sumatoriaNotas = 0;
+
+            //    for (i = 0; i < notasDeTPs.length; i++) {
+            //        sumatoriaNotas = sumatoriaNotas + notasDeTPs[i];
+            //    }
+
+            notasDeTPs.forEach(function(numero) {
+                sumatoriaNotas = sumatoriaNotas + numero;
+            });
+
+            notaFinal = sumatoriaNotas / notasDeTPs.length;
+
+            console.log(notaFinal);
+            // deberia mostrar 6.8
+        </script>
+    </head>
+    <body></body>
+</html>

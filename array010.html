@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+
+        <script>
+            var playlistNirvana = ['Smells Like Teen Spirit', 'Come As You Are', 'Heart-Shaped Box', 'Lithium'];
+            var playlistFoo = ['Everlong', 'The Pretender', 'Learn to Fly'];
+
+            var cantidadCancionesNirvana = playlistNirvana.length;
+            var cantidadCancionesFoo = playlistFoo.length;
+
+            if (cantidadCancionesNirvana > cantidadCancionesFoo) {
+                document.write('La playlist de Nirvana tiene más canciones');
+            } else if (cantidadCancionesFoo > cantidadCancionesNirvana) {
+                document.write('La playlist de Foo Fighters tiene más canciones');
+            }
+
+            console.log(playlistNirvana);
+            console.log(playlistFoo);
+        </script>
+    </head>
+    <body></body>
+</html>
