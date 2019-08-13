@@ -20,9 +20,10 @@
 
             // codear acá la solución del ejercicio
 
-            var listaLibros = librosDeJS.reduce(function(total, libro) {
-                return total + '<li>' + libro + '</li>';
-            });
+            var listaLibros = librosDeJS.reduce(function(arrayTotal, libro) {
+                arrayTotal.push('<li>' + libro + '</li>');
+                return arrayTotal;
+            }, []);
 
             console.log('<ul>' + listaLibros + '</ul>');
 

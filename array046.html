@@ -8,12 +8,15 @@
         <script>
             var playlist = ['Smells Like Teen Spirit', 'Everlong', 'Come As You Are', 'The Pretender', 'Heart-Shaped Box', 'Learn to Fly', 'Lithium'];
             var playlistEscuchada = ['The Pretender', 'Lithium', 'Come As You Are'];
+            var playlistSinEscuchar;
 
             /// codea aca tu solución
+
             var playlistSinEscuchar = playlist.filter(function(cancion) {
-                return cancion !== playlistEscuchada;
+                return playlistEscuchada.indexOf(cancion) == -1;
             });
 
+            //filtra cada cancion de playlist y luego a cada cancion comparar si el indexOf en las escuchadas es igual a -1, si es igual se va guardar en las canciones sin escuchar.
             console.log(playlistSinEscuchar);
             // deberia mostrar
             // [ 'Smells Like Teen Spirit', 'Everlong', 'Heart-Shaped Box', 'Learn to Fly' ]

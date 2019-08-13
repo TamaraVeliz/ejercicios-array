@@ -6,23 +6,25 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Document</title>
         <script>
-            var costos = [12.5, 56, 98, 45.75];
+            var productos = ['celular', 'notebook', 'monitor'];
+            var costos = [12.5, 56, 98];
 
             var agregarIVA = function(costo) {
                 return costo * 1.21;
             };
+
             var sumarGanancia = function(costo) {
                 return costo * 1.5;
             };
             // codear acá la solución del ejercicio
-            var preciosFinales = [];
-            preciosFinales = costos.map(function(costo) {
-                return agregarIVA(sumarGanancia(costo));
+
+            var preciosFinales = costos.map(function(costo, indice) {
+                return `${productos[indice]}  ${agregarIVA(sumarGanancia(costo))}`;
             });
 
             console.log(preciosFinales);
             // deberia mostrar
-            // [ 22.6875, 101.64, 177.87, 83.
+            // [ "celular 22.6875", "notebook 101.64", "monitor 177.87" ]
         </script>
     </head>
     <body></body>
